@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento de Transporte Público SITP</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #bus-info {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    #rating-section {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Seguimiento de Transporte Público</h1>
+
+  <div id="bus-info">
+    <h2>Información del Bus</h2>
+    <p>Nombre del bus: Bus123</p>
+    <p>Ruta: Ruta A</p>
+    <p>Tiempo estimado de llegada: 5 minutos</p>
+    <img src="bus-image.jpg" alt="Imagen del bus">
+  </div>
+
+  <div id="rating-section">
+    <h2>Calificar el Bus</h2>
+    <p>¿Cómo calificarías el servicio del bus?</p>
+    <select id="rating">
+      <option value="5">Excelente</option>
+      <option value="4">Muy bueno</option>
+      <option value="3">Bueno</option>
+      <option value="2">Regular</option>
+      <option value="1">Malo</option>
+    </select>
+    <button id="submit-rating">Enviar calificación</button>
+  </div>
+
+  <!-- Cargar el código JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
